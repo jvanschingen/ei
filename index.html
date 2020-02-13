@@ -6,20 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
     <title>Exercice Intégré</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   </head>
   <body>
     <header>
-      <div>
-        <a href="#"><!--<img src="img/logo_kazan.png" alt="Logo Kazan">--></a>
+      <div class="hearder">
+        <h1>
+          <a href="#"><img class="logo" src="img/logo_kazan.png" alt="Logo Kazan"></a>
+          <span class="invisible">
+            Kazan, capitale de la république du Tatarstan, une des divisions de
+            la Russie.
+            </span>
+        </h1>
         <div class="burgerMenu">
-            <span></span>
-            <span></span>
-            <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-        <nav>
+        <nav class="navigation">
           <form action="">
             <input type="text" />
-            <input type="submit" value="submit" />
+            <button class="search" type="submit"><i class="fa fa-search"></i></button>
           </form>
           <ul>
             <li><a href="#">Visits</a></li>
@@ -43,16 +51,18 @@
         <ul>
           <!--Lieu 1-->
           <li class="lieu">
-            <h3>Kremlin de Kazan</h3>
-            <p class="region center">Center of the city</p>
-            <img src="" alt="" />
-            <h4>Kremlin historique du Tatarstan</h4>
-            <p>
-              Construit sous les ordres d'Ivan IV, sur les ruines de l'ancien
-              château des khans de Kazan. Il est inscrit sur la liste du
-              patrimoine mondial de l'UNESCO. Organisation des Nations unies
-              pour l'Éducation, la Science et la Culture
-            </p>
+            <a href="#">
+              <h3>Kremlin de Kazan</h3>
+              <p class="region center">Center of the city</p>
+              <img class="vigniette" src="" alt="" />
+              <h4>Kremlin historique du Tatarstan</h4>
+              <p>
+                Construit sous les ordres d'Ivan IV, sur les ruines de l'ancien
+                château des khans de Kazan. Il est inscrit sur la liste du
+                patrimoine mondial de l'UNESCO. Organisation des Nations unies
+                pour l'Éducation, la Science et la Culture
+              </p>
+            </a>
             <div>
               <button>♥️</button>
               <a href="#">Read more</a>
@@ -60,15 +70,17 @@
           </li>
           <!--Lieu 2-->
           <li class="lieu">
-            <h3>Mosquée Qolsharif</h3>
-            <p class="region center">Center of the city</p>
-            <img src="" alt="" />
-            <h4>La Renaissance ottomane</h4>
-            <p>
-              La mosquée Qolşärif est un édifice religieux du kremlin de la
-              ville de Kazan en Russie. Elle était la plus grande mosquée
-              d'Europe après celle d'Istanbul.
-            </p>
+            <a href="#">
+              <h3>Mosquée Qolsharif</h3>
+              <p class="region center">Center of the city</p>
+              <img class="vigniette" src="" alt="" />
+              <h4>La Renaissance ottomane</h4>
+              <p>
+                La mosquée Qolşärif est un édifice religieux du kremlin de la
+                ville de Kazan en Russie. Elle était la plus grande mosquée
+                d'Europe après celle d'Istanbul.
+              </p>
+            </a>
             <div>
               <button>♥️</button>
               <a href="#">Read more</a>
@@ -76,14 +88,16 @@
           </li>
           <!--Lieu 3-->
           <li class="lieu">
-            <h3>Temple of All Religions</h3>
-            <p>West of the city</p>
-            <img src="" alt="" />
-            <h4>Temple, mosquée, synagogue,...</h4>
-            <p>
-              Le temple de toutes les religions est un complexe unique
-              comprenant plusieurs types d'architecture religieuse.
-            </p>
+            <a href="#">
+              <h3>Temple of All Religions</h3>
+              <p>West of the city</p>
+              <img class="vigniette" src="" alt="" />
+              <h4>Temple, mosquée, synagogue,...</h4>
+              <p>
+                Le temple de toutes les religions est un complexe unique
+                comprenant plusieurs types d'architecture religieuse.
+              </p>
+            </a>
             <div>
               <button>♥️</button>
               <a href="#">Read more</a>
@@ -91,15 +105,17 @@
           </li>
           <!--Lieu 4-->
           <li class="lieu">
-            <h3>Bauman Street</h3>
-            <p>Center of the city</p>
-            <img src="" alt="" />
-            <h4>Nikolay Bauman, révolutionnaire</h4>
-            <p>
-              La Rue Baumana est une rue piétonne située au cœur de Kazan. La
-              rue commence au pied du Kremlin et atteint la place Tukay, la
-              place centrale de la ville
-            </p>
+            <a href="#">
+              <h3>Bauman Street</h3>
+              <p>Center of the city</p>
+              <img class="vigniette" src="" alt="" />
+              <h4>Nikolay Bauman, révolutionnaire</h4>
+              <p>
+                La Rue Baumana est une rue piétonne située au cœur de Kazan. La
+                rue commence au pied du Kremlin et atteint la place Tukay, la
+                place centrale de la ville
+              </p>
+            </a>
             <div>
               <button>♥️</button>
               <a href="#">Read more</a>
@@ -107,14 +123,16 @@
           </li>
           <!--Lieu 5-->
           <li class="lieu">
-            <h3>Riviera Aquapark</h3>
-            <p>Center of the city</p>
-            <img src="" alt="" />
-            <h4>Riviera Aquapark</h4>
-            <p>
-              L'un des plus grands au monde Plus de 50 attractions différentes
-              pour que chacun puisse trouver sa véritable vague d'émotions !
-            </p>
+            <a href="#">
+              <h3>Riviera Aquapark</h3>
+              <p>Center of the city</p>
+              <img class="vigniette" src="" alt="" />
+              <h4>Riviera Aquapark</h4>
+              <p>
+                L'un des plus grands au monde Plus de 50 attractions différentes
+                pour que chacun puisse trouver sa véritable vague d'émotions !
+              </p>
+            </a>
             <div>
               <button>♥️</button>
               <a href="#">Read more</a>
@@ -122,14 +140,16 @@
           </li>
           <!--Lieu 6-->
           <li class="lieu">
-            <h3>Cathédrale de l'Annonciation</h3>
-            <p>South of the city</p>
-            <img src="" alt="" />
-            <h4>Architecture orthodoxe russe</h4>
-            <p>
-              Annexée au kremlin, c'est une église orthodoxe d'architecture
-              russe datant du XIVᵉ siècle et modifiée jusqu'au XIXᵉ siècle.
-            </p>
+            <a href="#">
+              <h3>Cathédrale de l'Annonciation</h3>
+              <p>South of the city</p>
+              <img class="vigniette" src="" alt="" />
+              <h4>Architecture orthodoxe russe</h4>
+              <p>
+                Annexée au kremlin, c'est une église orthodoxe d'architecture
+                russe datant du XIVᵉ siècle et modifiée jusqu'au XIXᵉ siècle.
+              </p>
+            </a>
             <div>
               <button>♥️</button>
               <a href="#">Read more</a>
@@ -137,15 +157,17 @@
           </li>
           <!--Lieu 7-->
           <li class="lieu">
-            <h3>Ozero Goluboye</h3>
-            <p>North of the city</p>
-            <img src="" alt="" />
-            <h4>Lac kartique de Kazan</h4>
-            <p>
-              Textuellement "Lac Bleu", sa profondeur maximale est de 18 m.
-              L'eau a rempli une caverne creusée dans du sédiment glaciaire qui
-              s'est effondrée.
-            </p>
+            <a href="#">
+              <h3>Ozero Goluboye</h3>
+              <p>North of the city</p>
+              <img class="vigniette" src="" alt="" />
+              <h4>Lac kartique de Kazan</h4>
+              <p>
+                Textuellement "Lac Bleu", sa profondeur maximale est de 18 m.
+                L'eau a rempli une caverne creusée dans du sédiment glaciaire
+                qui s'est effondrée.
+              </p>
+            </a>
             <div>
               <button>♥️</button>
               <a href="#">Read more</a>
@@ -153,14 +175,17 @@
           </li>
           <!--Lieu 8-->
           <li class="lieu">
-            <h3>Museum Republic Tatarstan</h3>
-            <p>Center of the city</p>
-            <img src="" alt="" />
-            <h4>L'histoire du Tatarstan</h4>
-            <p>
-              Le musée principal occupe le bâtiment de l'ancien Gostiny Dvor,
-              qui est un monument historique et culturel d'importance fédérale.
-            </p>
+            <a href="#">
+              <h3>Museum Republic Tatarstan</h3>
+              <p>Center of the city</p>
+              <img class="vigniette" src="" alt="" />
+              <h4>L'histoire du Tatarstan</h4>
+              <p>
+                Le musée principal occupe le bâtiment de l'ancien Gostiny Dvor,
+                qui est un monument historique et culturel d'importance
+                fédérale.
+              </p>
+            </a>
             <div>
               <button>♥️</button>
               <a href="#">Read more</a>
@@ -168,15 +193,17 @@
           </li>
           <!--Lieu 9-->
           <li class="lieu">
-            <h3>Kaban Lakes</h3>
-            <p>East of the city</p>
-            <img src="" alt="" />
-            <h4>De l'eau en pleine ville</h4>
-            <p>
-              Les lacs de Kaban sont des lacs qui combiné avec d'autres (Nizhny
-              Kaban, Verkhny Kaban et Sredny Kaban) font 1,86 kilomètres carrés,
-              le plus grand lac du Tatarstan.
-            </p>
+            <a href="#">
+              <h3>Kaban Lakes</h3>
+              <p>East of the city</p>
+              <img class="vigniette" src="" alt="" />
+              <h4>De l'eau en pleine ville</h4>
+              <p>
+                Les lacs de Kaban sont des lacs qui combiné avec d'autres
+                (Nizhny Kaban, Verkhny Kaban et Sredny Kaban) font 1,86
+                kilomètres carrés, le plus grand lac du Tatarstan.
+              </p>
+            </a>
             <div>
               <button>♥️</button>
               <a href="#">Read more</a>
@@ -184,15 +211,17 @@
           </li>
           <!--Lieu 10-->
           <li class="lieu">
-            <h3>Millennium Bridge</h3>
-            <p>North of the city</p>
-            <img src="" alt="" />
-            <h4>Pont à haubans</h4>
-            <p>
-              Le pont Millennium enjambe la rivière Kazanka. Construit pour le
-              millième anniversaire de Kazan, célébré en 2005, la forme de son
-              pylône est un M.
-            </p>
+            <a href="#">
+              <h3>Millennium Bridge</h3>
+              <p>North of the city</p>
+              <img class="vigniette" src="" alt="" />
+              <h4>Pont à haubans</h4>
+              <p>
+                Le pont Millennium enjambe la rivière Kazanka. Construit pour le
+                millième anniversaire de Kazan, célébré en 2005, la forme de son
+                pylône est un M.
+              </p>
+            </a>
             <div>
               <button>♥️</button>
               <a href="#">Read more</a>
@@ -200,15 +229,17 @@
           </li>
           <!--Lieu 11-->
           <li class="lieu">
-            <h3>Kazan Hermitage</h3>
-            <p>Center of the city</p>
-            <img src="" alt="" />
-            <h4>Palais des congrès et centre d'expositions</h4>
-            <p>
-              Musée avec diverses expositions et centre de congrès
-              internationnaux, l'Hermitage est un pôle culturel imposrtant du
-              centre ville
-            </p>
+            <a href="#">
+              <h3>Kazan Hermitage</h3>
+              <p>Center of the city</p>
+              <img class="vigniette" src="" alt="" />
+              <h4>Palais des congrès et centre d'expositions</h4>
+              <p>
+                Musée avec diverses expositions et centre de congrès
+                internationnaux, l'Hermitage est un pôle culturel imposrtant du
+                centre ville
+              </p>
+            </a>
             <div>
               <button>♥️</button>
               <a href="#">Read more</a>
@@ -216,15 +247,17 @@
           </li>
           <!--Lieu 12-->
           <li class="lieu">
-            <h3>Eglise St Pierre et Paul</h3>
-            <p>Center of the city</p>
-            <img src="" alt="" />
-            <h4>Architecture baroque</h4>
-            <p>
-              L’église Saint-Pierre-et-Paul est une église orthodoxe baroque
-              située dans la vieille ville. Elle est associée à Pierre Le Grand
-              arrivé à Kazan avant sa campagne persienne.
-            </p>
+            <a href="#">
+              <h3>Eglise St Pierre et Paul</h3>
+              <p>Center of the city</p>
+              <img class="vignette" src="" alt="" />
+              <h4>Architecture baroque</h4>
+              <p>
+                L’église Saint-Pierre-et-Paul est une église orthodoxe baroque
+                située dans la vieille ville. Elle est associée à Pierre Le
+                Grand arrivé à Kazan avant sa campagne persienne.
+              </p>
+            </a>
             <div>
               <button>♥️</button>
               <a href="#">Read more</a>
@@ -243,9 +276,9 @@
         </div>
       </a>
       <div class="adresse">
-        <p>TatarStan Toursim</p>
-        <p>Ulitsa Maksima Gor'kogo, 19, Kazan, 420015</p>
-        <p>
+        <p class="titre">TatarStan Toursim</p>
+        <p class="sous-titre">Ulitsa Maksima Gor'kogo, 19, Kazan, 420015</p>
+        <p class="contenu">
           Kazan (en russe, Казань ; en tatar : Казан) est une ville de Russie et
           la capitale de la république du Tatarstan, une des subdivisions de la
           Russie. Sa population s'élevait à 1 231 878 habitants en 2017 ce qui
@@ -253,9 +286,9 @@
         </p>
       </div>
       <div class="telephone">
-        <p>Visit Tatarstan</p>
-        <p>+7 843-206-00-14</p>
-        <p>(speaker’s support)</p>
+        <p class="titre">Visit Tatarstan</p>
+        <p class="contenu">+7 843-206-00-14</p>
+        <p class="complement">(speaker’s support)</p>
       </div>
       <div class="reseaux">
         <img src="" alt="" />
