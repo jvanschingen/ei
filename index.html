@@ -6,10 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
     <title>Exercice Intégré</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <script src="https://kit.fontawesome.com/e336211eb1.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
@@ -30,7 +27,7 @@
         </div>
         <nav class="navigation">
           <form class="recherche" action="#">
-            <input type="text" />
+            <input type="search" />
             <button class="search" type="submit">
               <i class="fa fa-search"></i>
             </button>
@@ -54,18 +51,18 @@
     <main>
       <h1>Que faire à Kazan ?</h1>
       <section>
-        <ul>
+        <ul class="lieux">
           <!--Lieu 1-->
           <li class="lieu">
             <a href="#">
-              <h3>Kremlin de Kazan</h3>
+              <h3>Kremlin <span>de Kazan</span></h3>
               <p class="region center">Center of the city</p>
               <img
-                class="vigniette"
+                class="vignette"
                 src="/img/kremlin_kazan.jpg"
                 alt="Kremlin de Kazan"
               />
-              <h4>Kremlin historique du Tatarstan</h4>
+              <h4 class="center">Kremlin historique du Tatarstan</h4>
               <p>
                 Construit sous les ordres d'Ivan IV, sur les ruines de l'ancien
                 château des khans de Kazan. Il est inscrit sur la liste du
@@ -74,21 +71,21 @@
               </p>
             </a>
             <div>
-              <button>♥️</button>
+              <i class="far fa-heart center"></i>
               <a href="#">Read more</a>
             </div>
           </li>
           <!--Lieu 2-->
           <li class="lieu">
             <a href="#">
-              <h3>Mosquée Qolsharif</h3>
+              <h3>Mosquée <span>Qolsharif</span></h3>
               <p class="region center">Center of the city</p>
               <img
-                class="vigniette"
+                class="vignette"
                 src="/img/mosaquee_Qolsharif.jpg"
                 alt="Mosquée Qolsharif"
               />
-              <h4>La Renaissance ottomane</h4>
+              <h4 class="center">La Renaissance ottomane</h4>
               <p>
                 La mosquée Qolşärif est un édifice religieux du kremlin de la
                 ville de Kazan en Russie. Elle était la plus grande mosquée
@@ -96,42 +93,42 @@
               </p>
             </a>
             <div>
-              <button>♥️</button>
+              <i class="far fa-heart center"></i>
               <a href="#">Read more</a>
             </div>
           </li>
           <!--Lieu 3-->
           <li class="lieu">
             <a href="#">
-              <h3>Temple of All Religions</h3>
-              <p>West of the city</p>
+              <h3>Temple <span>of All Religions</span></h3>
+              <p class="region outside">West of the city</p>
               <img
-                class="vigniette"
+                class="vignette"
                 src="/img/temple_all_religions.jpg"
                 alt="Temple of All Religions"
               />
-              <h4>Temple, mosquée, synagogue,...</h4>
+              <h4 class="outside">Temple, mosquée, synagogue,...</h4>
               <p>
                 Le temple de toutes les religions est un complexe unique
                 comprenant plusieurs types d'architecture religieuse.
               </p>
             </a>
             <div>
-              <button>♥️</button>
+              <i class="far fa-heart outside"></i>
               <a href="#">Read more</a>
             </div>
           </li>
           <!--Lieu 4-->
           <li class="lieu">
             <a href="#">
-              <h3>Bauman Street</h3>
-              <p>Center of the city</p>
+              <h3>Bauman <span>Street</span></h3>
+              <p class="region center">Center of the city</p>
               <img
-                class="vigniette"
+                class="vignette"
                 src="/img/baumana_street.jpg"
                 alt="Baumen Street"
               />
-              <h4>Nikolay Bauman, révolutionnaire</h4>
+              <h4 class="center">Nikolay Bauman, révolutionnaire</h4>
               <p>
                 La Rue Baumana est une rue piétonne située au cœur de Kazan. La
                 rue commence au pied du Kremlin et atteint la place Tukay, la
@@ -139,63 +136,63 @@
               </p>
             </a>
             <div>
-              <button>♥️</button>
+              <i class="far fa-heart center"></i>
               <a href="#">Read more</a>
             </div>
           </li>
           <!--Lieu 5-->
           <li class="lieu">
             <a href="#">
-              <h3>Riviera Aquapark</h3>
-              <p>Center of the city</p>
+              <h3>Riviera <span>Aquapark</span></h3>
+              <p class="region center">Center of the city</p>
               <img
-                class="vigniette"
+                class="vignette"
                 src="/img/riviera_aquapark.jpg"
                 alt="Riviera Aquapark"
               />
-              <h4>Riviera Aquapark</h4>
+              <h4 class="center">Riviera Aquapark</h4>
               <p>
                 L'un des plus grands au monde Plus de 50 attractions différentes
                 pour que chacun puisse trouver sa véritable vague d'émotions !
               </p>
             </a>
             <div>
-              <button>♥️</button>
+              <i class="far fa-heart center"></i>
               <a href="#">Read more</a>
             </div>
           </li>
           <!--Lieu 6-->
           <li class="lieu">
             <a href="#">
-              <h3>Cathédrale de l'Annonciation</h3>
-              <p>South of the city</p>
+              <h3>Cathédrale <span>de l'Annonciation</span></h3>
+              <p class="region outside">South of the city</p>
               <img
-                class="vigniette"
+                class="vignette"
                 src="/img/cathedrale_annonciation.jpg"
                 alt="Cathédrale de l'Annonciation"
               />
-              <h4>Architecture orthodoxe russe</h4>
+              <h4 class="outside">Architecture orthodoxe russe</h4>
               <p>
                 Annexée au kremlin, c'est une église orthodoxe d'architecture
                 russe datant du XIVᵉ siècle et modifiée jusqu'au XIXᵉ siècle.
               </p>
             </a>
             <div>
-              <button>♥️</button>
+              <i class="far fa-heart outside"></i>
               <a href="#">Read more</a>
             </div>
           </li>
           <!--Lieu 7-->
           <li class="lieu">
             <a href="#">
-              <h3>Ozero Goluboye</h3>
-              <p>North of the city</p>
+              <h3>Ozero <span>Goluboye</span></h3>
+              <p class="region outside">North of the city</p>
               <img
-                class="vigniette"
+                class="vignette"
                 src="/img/goluboe_ozero.jpg"
                 alt="Ozero Goluboye"
               />
-              <h4>Lac kartique de Kazan</h4>
+              <h4 class="outside">Lac kartique de Kazan</h4>
               <p>
                 Textuellement "Lac Bleu", sa profondeur maximale est de 18 m.
                 L'eau a rempli une caverne creusée dans du sédiment glaciaire
@@ -203,21 +200,21 @@
               </p>
             </a>
             <div>
-              <button>♥️</button>
+              <i class="far fa-heart outside"></i>
               <a href="#">Read more</a>
             </div>
           </li>
           <!--Lieu 8-->
           <li class="lieu">
             <a href="#">
-              <h3>Museum Republic Tatarstan</h3>
-              <p>Center of the city</p>
+              <h3>Museum <span>Republic Tatarstan</span></h3>
+              <p class="region center">Center of the city</p>
               <img
-                class="vigniette"
+                class="vignette"
                 src="/img/musee_tatarstan.jpg"
                 alt="Museum Republic Tatarstan"
               />
-              <h4>L'histoire du Tatarstan</h4>
+              <h4 class="center">L'histoire du Tatarstan</h4>
               <p>
                 Le musée principal occupe le bâtiment de l'ancien Gostiny Dvor,
                 qui est un monument historique et culturel d'importance
@@ -225,21 +222,21 @@
               </p>
             </a>
             <div>
-              <button>♥️</button>
+              <i class="far fa-heart center"></i>
               <a href="#">Read more</a>
             </div>
           </li>
           <!--Lieu 9-->
           <li class="lieu">
             <a href="#">
-              <h3>Kaban Lakes</h3>
-              <p>East of the city</p>
+              <h3>Kaban <span>Lakes</span></h3>
+              <p class="region outside">East of the city</p>
               <img
-                class="vigniette"
+                class="vignette"
                 src="/img/lake_kaban.jpg"
                 alt="Kaban Lakes"
               />
-              <h4>De l'eau en pleine ville</h4>
+              <h4 class="outside">De l'eau en pleine ville</h4>
               <p>
                 Les lacs de Kaban sont des lacs qui combiné avec d'autres
                 (Nizhny Kaban, Verkhny Kaban et Sredny Kaban) font 1,86
@@ -247,21 +244,21 @@
               </p>
             </a>
             <div>
-              <button>♥️</button>
+              <i class="far fa-heart outside"></i>
               <a href="#">Read more</a>
             </div>
           </li>
           <!--Lieu 10-->
           <li class="lieu">
             <a href="#">
-              <h3>Millennium Bridge</h3>
-              <p>North of the city</p>
+              <h3>Millennium <span>Bridge</span></h3>
+              <p class="region outside">North of the city</p>
               <img
-                class="vigniette"
+                class="vignette"
                 src="/img/millennium_bridge.jpg"
                 alt="Millenium Bridge"
               />
-              <h4>Pont à haubans</h4>
+              <h4 class="outside">Pont à haubans</h4>
               <p>
                 Le pont Millennium enjambe la rivière Kazanka. Construit pour le
                 millième anniversaire de Kazan, célébré en 2005, la forme de son
@@ -269,21 +266,21 @@
               </p>
             </a>
             <div>
-              <button>♥️</button>
+              <i class="far fa-heart outside"></i>
               <a href="#">Read more</a>
             </div>
           </li>
           <!--Lieu 11-->
           <li class="lieu">
             <a href="#">
-              <h3>Kazan Hermitage</h3>
-              <p>Center of the city</p>
+              <h3>Kazan <span>Hermitage</span></h3>
+              <p class="region center">Center of the city</p>
               <img
-                class="vigniette"
+                class="vignette"
                 src="/img/kazan_hermitage.jpg"
                 alt="Kazan Hermitage"
               />
-              <h4>Palais des congrès et centre d'expositions</h4>
+              <h4 class="center">Palais des congrès et centre d'expositions</h4>
               <p>
                 Musée avec diverses expositions et centre de congrès
                 internationnaux, l'Hermitage est un pôle culturel imposrtant du
@@ -291,21 +288,21 @@
               </p>
             </a>
             <div>
-              <button>♥️</button>
+              <i class="far fa-heart center"></i>
               <a href="#">Read more</a>
             </div>
           </li>
           <!--Lieu 12-->
           <li class="lieu">
             <a href="#">
-              <h3>Eglise St Pierre et Paul</h3>
-              <p>Center of the city</p>
+              <h3>Eglise <span>St Pierre et Paul</span></h3>
+              <p class="region center">Center of the city</p>
               <img
                 class="vignette"
                 src="/img/eglise_pierre-paul.jpg"
                 alt="Église St Pierre et Paul"
               />
-              <h4>Architecture baroque</h4>
+              <h4 class="center">Architecture baroque</h4>
               <p>
                 L’église Saint-Pierre-et-Paul est une église orthodoxe baroque
                 située dans la vieille ville. Elle est associée à Pierre Le
@@ -313,7 +310,7 @@
               </p>
             </a>
             <div>
-              <button>♥️</button>
+              <i class="far fa-heart center"></i>
               <a href="#">Read more</a>
             </div>
           </li>
