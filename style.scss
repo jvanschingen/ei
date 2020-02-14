@@ -1,14 +1,32 @@
+//Imports
+
 @import "font-awesome.min.css";
-@import url('/fonts/Montserrat/Montserrat-Medium.ttf');
+@import url("/fonts/Montserrat/Montserrat-Medium.ttf");
+@import url("/fonts/Montserrat/Montserrat-SemiBold.ttf");
+
+//Charte
+
+$darkcolor: #284e68;
+$lightcolor: #00D8FF;
 
 body {
-  background-color: aquamarine;
+
   margin: 0;
   font-family: "Montserrat", sans-serif;
 
+  //Header
   header {
     height: 100vh;
-    background-color: blueviolet;
+    background-image: linear-gradient(180deg, rgba(45, 85, 133, 0.705) 25%, rgba(133, 89, 253, 0.7) 100%), url(/img/header.jpg);
+    background-repeat: no-repeat;
+    background-size: auto, auto 50vh;
+    background-position-x: 85%;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+
 
     h1 {
       margin: 0;
@@ -18,58 +36,117 @@ body {
       .logo {
         height: 150px;
         z-index: 200;
+        position: absolute;
+        margin: 40px;
+        top: 0;
       }
     }
-    .burgerMenu{
-        height: 50px;
-        width:50px;
+    .burgerMenu {
+      height: 32px;
+      width: 26px;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      z-index: 200;
+      margin: 40px 10px 0 0;
 
-        position: fixed;
-        top:10px;
-        right: 10px;
-        z-index: 200;
-        span::after{
-            display: block;
-            content: "";
-            width: 25px;
-            height: 5px;
-            background-color: white;
-            margin: 5px;
-            border-radius: 5px;
-            
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-end;
+      span::after {
+        display: block;
+        content: "";
+        height: 4px;
+        background-color: $lightcolor;
+      }
+      #ligne1::after {
+        width: 26px;
+      }
+      #ligne2::after {
+        width: 32px;
+      }
+      #ligne3::after {
+        width: 16px;
+      }
+      &:hover {
+        #ligne1::after {
+          width: 32px;
         }
+        #ligne2::after {
+          width: 32px;
+        }
+        #ligne3::after {
+          width: 32px;
+        }
+      }
     }
 
-    .navigation{
-        height: 100vh;
-        width: 100vw;
-        background-color: red;
-        position: fixed;
-        top:0;
-        left:0vw;
-        z-index: 100;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: flex-end;
-        input{
+    //Menu de navigation
+    .navigation {
+      height: 100vh;
+      width: 100vw;
+      background-color: #00d8ff;
+      position: fixed;
+      top: 0;
+      left: 100vw;
+      z-index: 100;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
 
-            width: 90vw;
-            height: 20px;
-            border:none;
-            padding: 0px;
-
+      .recherche {
+        margin-right: 10px;
+        input {
+          width: 0vw; //80vw
+          height: 2em;
+          border: none;
+          padding: 0px;
         }
-        .search{
-            background: none;
-            border: none;
-            cursor: pointer;
-
-
+        .search {
+          background: none;
+          border: none;
+          cursor: pointer;
+          color: $darkcolor;
+          font-size: 1.5em;
         }
-        ul{
-            text-align: right;
+      }
+      ul {
+        text-align: right;
+        margin: 0 10px 30px 0;
+        li {
+          list-style: none;
+          margin: 10px;
+          padding: 5px 0 5px 0;
+          a {
+            text-decoration: none;
+            color: $darkcolor;
+            font-size: 2em;
+            font-weight: 600;
+          }
         }
+      }
+    }
+
+    .desktop{
+      display: none;
+    }
+    h2{
+      margin: 0;
+    }
+    .boutton{
+      background-color: $lightcolor;
+      width: 250px;
+      height: 50px;
+      border-radius: 35px;
+      text-decoration: none;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 600;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
   }
 }
