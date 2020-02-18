@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
     <title>Exercice Intégré</title>
-    <script src="https://kit.fontawesome.com/e336211eb1.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/e336211eb1.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
@@ -27,7 +30,7 @@
         </div>
         <nav class="navigation">
           <form class="recherche" action="#">
-            <input type="search" />
+            <input type="search" class="input_search" />
             <button class="search" type="submit">
               <i class="fa fa-search"></i>
             </button>
@@ -53,8 +56,8 @@
       <section>
         <ul class="lieux">
           <!--Lieu 1-->
-          <li class="lieu">
-            <a href="#">
+          <li class="lieu" id="lieu1">
+            <a href="#lieu1">
               <h3>Kremlin <span>de Kazan</span></h3>
               <p class="region center">Center of the city</p>
               <img
@@ -76,8 +79,8 @@
             </div>
           </li>
           <!--Lieu 2-->
-          <li class="lieu">
-            <a href="#">
+          <li class="lieu close" id="lieu2">
+            <a href="#lieu2">
               <h3>Mosquée <span>Qolsharif</span></h3>
               <p class="region center">Center of the city</p>
               <img
@@ -98,8 +101,8 @@
             </div>
           </li>
           <!--Lieu 3-->
-          <li class="lieu">
-            <a href="#">
+          <li class="lieu close" id="lieu3">
+            <a href="#lieu3">
               <h3>Temple <span>of All Religions</span></h3>
               <p class="region outside">West of the city</p>
               <img
@@ -119,8 +122,8 @@
             </div>
           </li>
           <!--Lieu 4-->
-          <li class="lieu">
-            <a href="#">
+          <li class="lieu close" id="lieu4">
+            <a href="#lieu4">
               <h3>Bauman <span>Street</span></h3>
               <p class="region center">Center of the city</p>
               <img
@@ -141,8 +144,8 @@
             </div>
           </li>
           <!--Lieu 5-->
-          <li class="lieu">
-            <a href="#">
+          <li class="lieu close" id="lieu5">
+            <a href="#lieu5">
               <h3>Riviera <span>Aquapark</span></h3>
               <p class="region center">Center of the city</p>
               <img
@@ -162,8 +165,8 @@
             </div>
           </li>
           <!--Lieu 6-->
-          <li class="lieu">
-            <a href="#">
+          <li class="lieu close" id="lieu6">
+            <a href="#lieu6">
               <h3>Cathédrale <span>de l'Annonciation</span></h3>
               <p class="region outside">South of the city</p>
               <img
@@ -183,8 +186,8 @@
             </div>
           </li>
           <!--Lieu 7-->
-          <li class="lieu">
-            <a href="#">
+          <li class="lieu close" id="lieu7">
+            <a href="#lieu7">
               <h3>Ozero <span>Goluboye</span></h3>
               <p class="region outside">North of the city</p>
               <img
@@ -205,8 +208,8 @@
             </div>
           </li>
           <!--Lieu 8-->
-          <li class="lieu">
-            <a href="#">
+          <li class="lieu close" id="lieu8">
+            <a href="#lieu8">
               <h3>Museum <span>Republic Tatarstan</span></h3>
               <p class="region center">Center of the city</p>
               <img
@@ -227,8 +230,8 @@
             </div>
           </li>
           <!--Lieu 9-->
-          <li class="lieu">
-            <a href="#">
+          <li class="lieu close" id="lieu9">
+            <a href="#lieu9">
               <h3>Kaban <span>Lakes</span></h3>
               <p class="region outside">East of the city</p>
               <img
@@ -249,8 +252,8 @@
             </div>
           </li>
           <!--Lieu 10-->
-          <li class="lieu">
-            <a href="#">
+          <li class="lieu close" id="lieu10">
+            <a href="#lieu10">
               <h3>Millennium <span>Bridge</span></h3>
               <p class="region outside">North of the city</p>
               <img
@@ -271,8 +274,8 @@
             </div>
           </li>
           <!--Lieu 11-->
-          <li class="lieu">
-            <a href="#">
+          <li class="lieu close" id="lieu11">
+            <a href="#lieu11">
               <h3>Kazan <span>Hermitage</span></h3>
               <p class="region center">Center of the city</p>
               <img
@@ -293,8 +296,8 @@
             </div>
           </li>
           <!--Lieu 12-->
-          <li class="lieu">
-            <a href="#">
+          <li class="lieu close" id="lieu12">
+            <a href="#lieu12">
               <h3>Eglise <span>St Pierre et Paul</span></h3>
               <p class="region center">Center of the city</p>
               <img
@@ -319,34 +322,38 @@
     </main>
     <footer>
       <a href="#" class="ticket">
-        <p>GET TICKETS</p>
-        <div>
-          <img src="#" alt="#" />
-          <img src="#" alt="#" />
-          <p>Paypal ₽2600 <span>RUR</span></p>
+        <p class="getTicket">GET TICKETS</p>
+        <div class="prix">
+          <div class="modePayement">
+            <i class="far fa-credit-card icon"></i>
+            <i class="fab fa-paypal icon"></i>
+          </div>
+          <p class="montant">₽2600 <span>RUR</span></p>
         </div>
       </a>
-      <div class="adresse">
-        <p class="titre">TatarStan Toursim</p>
-        <p class="sous-titre">Ulitsa Maksima Gor'kogo, 19, Kazan, 420015</p>
-        <p class="contenu">
-          Kazan (en russe, Казань ; en tatar : Казан) est une ville de Russie et
-          la capitale de la république du Tatarstan, une des subdivisions de la
-          Russie. Sa population s'élevait à 1 231 878 habitants en 2017 ce qui
-          en fait la sixième ville de Russie.
-        </p>
-      </div>
-      <div class="telephone">
-        <p class="titre">Visit Tatarstan</p>
-        <p class="contenu">+7 843-206-00-14</p>
-        <p class="complement">(speaker’s support)</p>
-      </div>
-      <div class="reseaux">
-        <img src="#" alt="#" />
-        <p>#kazan2019</p>
-        <img src="#" alt="#" />
-        <p>@kazan2019</p>
+      <div class="infos">
+        <div class="adresse">
+          <p class="titre"> <img src="/img/pin.svg" alt="pin"/> TatarStan Toursim</p>
+          <p class="sous-titre">Ulitsa Maksima Gor'kogo, 19, Kazan, 420015</p>
+          <p class="contenu">
+            Kazan (en russe, Казань ; en tatar : Казан) est une ville de Russie
+            et la capitale de la république du Tatarstan, une des subdivisions
+            de la Russie. Sa population s'élevait à 1 231 878 habitants en 2017
+            ce qui en fait la sixième ville de Russie.
+          </p>
+        </div>
+        <div class="telephone">
+          <p class="titre">Visit Tatarstan</p>
+          <p class="contenu">+7 843-206-00-14</p>
+          <p class="complement">(speaker’s support)</p>
+        </div>
+        <div class="reseaux">
+          <p class="follow">Follow US</p>
+          <a href="#"> <i class="fab fa-slack-hash"></i>#kazan2019</p>
+          <a href="#"> <i class="fab fa-twitter"></i>@kazan2019</p>
+        </div>
       </div>
     </footer>
+    <script src="/script.js"></script>
   </body>
 </html>

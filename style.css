@@ -108,7 +108,7 @@ body header .burgerMenu span::after {
   display: block;
   content: "";
   height: 4px;
-  background-color: #00d8ff;
+  background-color: #284e68;
 }
 
 body header .burgerMenu #ligne1::after {
@@ -136,12 +136,14 @@ body header .burgerMenu:hover #ligne3::after {
 }
 
 body header .navigation {
+  -webkit-transition: all 1s;
+  transition: all 1s;
   height: 100vh;
   width: 100vw;
   background-color: #00d8ff;
   position: fixed;
   top: 0;
-  left: 100vw;
+  left: -100vw;
   z-index: 100;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -162,11 +164,19 @@ body header .navigation .recherche {
   margin-right: 10px;
 }
 
-body header .navigation .recherche input {
+body header .navigation .recherche .input_search {
   width: 0vw;
   height: 2em;
   border: none;
   padding: 0px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+body header .navigation .recherche .large {
+  width: 80vw;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 body header .navigation .recherche .search {
@@ -193,6 +203,12 @@ body header .navigation ul li a {
   color: #284e68;
   font-size: 2em;
   font-weight: 600;
+}
+
+body header .navOpen {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  left: 0vw;
 }
 
 body header .desktop {
@@ -264,9 +280,9 @@ body main .lieux {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body main .lieux .lieu {
@@ -274,7 +290,9 @@ body main .lieux .lieu {
   list-style: none;
   width: 95vw;
   padding: 30px 0px;
-  margin: 15px 0;
+  margin: 15px 15px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 body main .lieux .lieu a {
@@ -290,26 +308,31 @@ body main .lieux .lieu a {
           align-items: flex-start;
   text-decoration: none;
   color: white;
-  padding: 25px 25px 10px 25px;
+  padding: 0px 25px 10px 25px;
 }
 
 body main .lieux .lieu a h3 {
-  margin: 0;
-  font-size: 2em;
+  margin: 20px 0 0 0;
+  font-size: 1.5em;
   line-height: 0.78;
-  /*&:after {
-              content: "";
-              display: block;
-              width: 5px;
-              height: 5px;
-              border-radius: 5px;
-              background-color: red;
-            }*/
 }
 
 body main .lieux .lieu a h3 span {
   font-family: "Museo300-Regular";
   display: block;
+}
+
+body main .lieux .lieu a h3::after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: grey;
+  -webkit-filter: drop-shadow(0.5em 0 0 grey);
+          filter: drop-shadow(0.5em 0 0 grey);
+  -webkit-transform: translateX(300px) rotate(90deg);
+          transform: translateX(300px) rotate(90deg);
 }
 
 body main .lieux .lieu a .region {
@@ -330,7 +353,8 @@ body main .lieux .lieu a h4 {
 
 body main .lieux .lieu a p {
   margin: 0;
-  line-height: 1.8;
+  line-height: 1.2em;
+  color: white;
 }
 
 body main .lieux .lieu div {
@@ -348,6 +372,7 @@ body main .lieux .lieu div {
 
 body main .lieux .lieu div .fa-heart {
   font-size: 1.5em;
+  cursor: pointer;
 }
 
 body main .lieux .lieu div a {
@@ -362,10 +387,171 @@ body main .lieux .lieu div a::before {
   margin: 30px;
 }
 
+body main .lieux .close {
+  background-color: #ebebeb;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  padding: 0;
+}
+
+body main .lieux .close a h3 {
+  color: #284e68;
+}
+
+body main .lieux .close a h3::after {
+  -webkit-filter: drop-shadow(0.5em 0 0 grey) drop-shadow(-0.5em 0 0 grey);
+          filter: drop-shadow(0.5em 0 0 grey) drop-shadow(-0.5em 0 0 grey);
+  -webkit-transform: translateX(300px) rotate(0deg);
+          transform: translateX(300px) rotate(0deg);
+}
+
+body main .lieux .close a .vignette {
+  display: none;
+}
+
+body main .lieux .close a h4 {
+  display: none;
+}
+
+body main .lieux .close a p {
+  display: none;
+}
+
+body main .lieux .close a .region {
+  display: block;
+  color: #00d8ff;
+  margin: 0;
+}
+
+body main .lieux .close div {
+  display: none;
+}
+
 body footer {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(25%, rgba(40, 50, 58, 0.801)), to(#1f384d)), url(/img/footer.jpg);
-  background-image: linear-gradient(180deg, rgba(40, 50, 58, 0.801) 25%, #1f384d 100%), url(/img/footer.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(25%, rgba(40, 50, 58, 0.6)), to(#1f384d)), url(/img/footer.jpg);
+  background-image: linear-gradient(180deg, rgba(40, 50, 58, 0.6) 25%, #1f384d 100%), url(/img/footer.jpg);
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: 100% 100%;
+  position: relative;
+  -webkit-transform: translateY(75px);
+          transform: translateY(75px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body footer .ticket {
+  text-decoration: none;
+  position: absolute;
+  width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translateY(-75px);
+          transform: translateY(-75px);
+  -webkit-box-shadow: 0px 0px 15px rgba(223, 223, 223, 0.2);
+          box-shadow: 0px 0px 15px rgba(223, 223, 223, 0.2);
+}
+
+body footer .ticket .getTicket {
+  background-color: #00d8ff;
+  color: #2b3841;
+  width: 250px;
+  height: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.3em;
+  margin: 0;
+}
+
+body footer .ticket .prix {
+  background-color: #2b3841;
+  color: white;
+  width: 230px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+  font-size: 1.2em;
+}
+
+body footer .ticket .prix .icon {
+  opacity: .5;
+}
+
+body footer .ticket .prix .montant {
+  margin: 0;
+}
+
+body footer .ticket .prix .montant span {
+  color: #00d8ff;
+}
+
+body footer .infos {
+  padding: 75px 10px 20px 50px;
+  color: white;
+}
+
+body footer .infos .adresse .titre {
+  font-size: 1.4em;
+}
+
+body footer .infos .adresse .titre img {
+  width: 20px;
+  padding-right: 50px;
+}
+
+body footer .infos .adresse .contenu {
+  line-height: 1.7em;
+}
+
+body footer .infos .telephone {
+  margin: 30px 0;
+}
+
+body footer .infos .telephone p {
+  margin: 10px 0;
+}
+
+body footer .infos .reseaux {
+  background-color: white;
+  color: #284e68;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+body footer .infos .reseaux .follow {
+  color: #00d8ff;
+  font-size: 1.2em;
+}
+
+body footer .infos .reseaux a {
+  color: #284e68;
+  text-decoration: none;
+}
+
+body footer .infos .reseaux a i {
+  font-size: 2em;
+  padding-right: 20px;
 }
 /*# sourceMappingURL=style.css.map */
